@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Goal Assistant</string>
+    <string name="save">Save</string>
+    <string name="goal">Goal</string>
+    <string name="name">Name</string>
+    <string name="error_message_name">Name  Field Cannot Be Blank !</string>
+    <string name="error_message_goal">Goal Field Cannot Be Blank !</string>
+</resources>

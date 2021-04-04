@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="2dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginRight="2dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_goalboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/titleconstraint"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/editimagegoal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_menu" />
+
+                <TextView
+                    android:id="@+id/textView51"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Goal Board"
+                    android:textSize="30dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/imaginetextview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="Benim hedefim: Üniversiteyi Kazanmak"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView51"
+                    app:layout_constraintVertical_bias="1.0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/daysconstraint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/day1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@mipmap/ic_circleday"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textAlignment="gravity"
+                    app:layout_constraintBottom_toTopOf="@+id/day7"
+                    app:layout_constraintEnd_toStartOf="@+id/day2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/day2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@mipmap/ic_circleday"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textAlignment="gravity"
+                    app:layout_constraintBottom_toTopOf="@+id/day8"
+                    app:layout_constraintEnd_toStartOf="@+id/day3"
+                    app:layout_constraintStart_toEndOf="@+id/day1"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/day3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@mipmap/ic_circleday"
+                    android:gravity="center"
+                    android:text="3"
+                    app:layout_constraintBottom_toTopOf="@+id/day9"
+                    app:layout_constraintEnd_toStartOf="@+id/day4"
+                    app:layout_constraintStart_toEndOf="@+id/day2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/day4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@mipmap/ic_circleday"
+                    android:gravity="center"
+                    android:text="4"
+                    app:layout_constraintBottom_toTopOf="@+id/day10"
+                    app:layout_constraintEnd_toStartOf="@+id/day5"
+                    app:layout_constraintStart_toEndOf="@+id/day3"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/day5"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@mipmap/ic_circleday"
+                    android:gravity="center"
+                    android:text="5"
+                    app:layout_constraintBottom_toTopOf="@+id/day11"
+                    app:layout_constraintEnd_toStartOf="@+id/day6"
+                    app:layout_constraintStart_toEndOf="@+id/day4"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/day6"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@mipmap/ic_circleday"
+                    android:gravity="center"
+                    android:text="6"
+                    app:layout_constraintBottom_toTopOf="@+id/day12"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/day5"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/day7"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@mipmap/ic_circleday"
+                    android:gravity="center"
+                    android:text="7"
+                    app:layout_constraintBottom_toTopOf="@+id/day13"
+                    app:layout_constraintEnd_toStartOf="@+id/day8"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/day1" />
+
+                <TextView
+                    android:id="@+id/day10"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@mipmap/ic_circleday"
+                    android:gravity="center"
+                    android:text="10"
+                    app:layout_constraintBottom_toTopOf="@+id/day16"
+                    app:layout_constraintEnd_toStartOf="@+id/day11"
+                    app:layout_constraintStart_toEndOf="@+id/day9"
+                    app:layout_constraintTop_toBottomOf="@+id/day4" />
+
+                <TextView
+                    android:id="@+id/day9"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@mipmap/ic_circleday"
+                    android:gravity="center"
+                    android:text="9"
+                    app:layout_constraintBottom_toTopOf="@+id/day15"
+                    app:layout_constraintEnd_toStartOf="@+id/day10"
+                    app:layout_constraintStart_toEndOf="@+id/day8"
+                    app:layout_constraintTop_toBottomOf="@+id/day3" />
+
+                <TextView
+                    android:id="@+id/day8"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@mipmap/ic_circleday"
+                    android:gravity="center"
+                    android:text="8"
+                    app:layout_constraintBottom_toTopOf="@+id/day14"
+                    app:layout_constraintEnd_toStartOf="@+id/day9"
+                    app:layout_constraintStart_toEndOf="@+id/day7"
+                    app:layout_constraintTop_toBottomOf="@+id/day2" />
+
+                <TextView
+                    android:id="@+id/day12"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@mipmap/ic_circleday"
+                    android:gravity="center"
+                    android:text="12"
+                    app:layout_constraintBottom_toTopOf="@+id/day18"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/day11"
+                    app:layout_constraintTop_toBottomOf="@+id/day6" />
+
+                <TextView
+                    android:id="@+id/day11"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@mipmap/ic_circleday"
+                    android:gravity="center"
+                    android:text="11"
+                    app:layout_constraintBottom_toTopOf="@+id/day17"
+                    app:layout_constraintEnd_toStartOf="@+id/day12"
+                    app:layout_constraintStart_toEndOf="@+id/day10"
+                    app:layout_constraintTop_toBottomOf="@+id/day5" />
+
+                <TextView
+                    android:id="@+id/day13"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@mipmap/ic_circleday"
+                    android:gravity="center"
+                    android:text="13"
+                    app:layout_constraintBottom_toTopOf="@+id/day19"
+                    app:layout_constraintEnd_toStartOf="@+id/day14"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/day7" />
+
+                <TextView
+                    android:id="@+id/day14"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@mipmap/ic_circleday"
+                    android:gravity="center"
+                    android:text="14"
+                    app:layout_constraintBottom_toTopOf="@+id/day20"
+                    app:layout_constraintEnd_toStartOf="@+id/day15"
+                    app:layout_constraintStart_toEndOf="@+id/day13"
+                    app:layout_constraintTop_toBottomOf="@+id/day8" />
+
+                <TextView
+                    android:id="@+id/day15"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@mipmap/ic_circleday"
+                    android:gravity="center"
+                    android:text="15"
+                    app:layout_constraintBottom_toTopOf="@+id/day21"
+                    app:layout_constraintEnd_toStartOf="@+id/day16"
+                    app:layout_constraintStart_toEndOf="@+id/day14"
+                    app:layout_constraintTop_toBottomOf="@+id/day9" />
+
+                <TextView
+                    android:id="@+id/day16"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@mipmap/ic_circleday"
+                    android:gravity="center"
+                    android:text="16"
+                    app:layout_constraintBottom_toTopOf="@+id/day22"
+                    app:layout_constraintEnd_toStartOf="@+id/day17"
+                    app:layout_constraintStart_toEndOf="@+id/day15"
+                    app:layout_constraintTop_toBottomOf="@+id/day10" />
+
+                <TextView
+                    android:id="@+id/day17"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@mipmap/ic_circleday"
+                    android:gravity="center"
+                    android:text="17"
+                    app:layout_constraintBottom_toTopOf="@+id/day23"
+                    app:layout_constraintEnd_toStartOf="@+id/day18"
+                    app:layout_constraintStart_toEndOf="@+id/day16"
+                    app:layout_constraintTop_toBottomOf="@+id/day11" />
+
+                <TextView
+                    android:id="@+id/day18"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@mipmap/ic_circleday"
+                    android:gravity="center"
+                    android:text="18"
+                    app:layout_constraintBottom_toTopOf="@+id/day24"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/day17"
+                    app:layout_constraintTop_toBottomOf="@+id/day12" />
+
+                <TextView
+                    android:id="@+id/day19"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@mipmap/ic_circleday"
+                    android:gravity="center"
+                    android:text="19"
+                    app:layout_constraintBottom_toTopOf="@+id/day25"
+                    app:layout_constraintEnd_toStartOf="@+id/day20"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/day13" />
+
+                <TextView
+                    android:id="@+id/day20"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@mipmap/ic_circleday"
+                    android:gravity="center"
+                    android:text="20"
+                    app:layout_constraintBottom_toTopOf="@+id/day26"
+                    app:layout_constraintEnd_toStartOf="@+id/day21"
+                    app:layout_constraintStart_toEndOf="@+id/day19"
+                    app:layout_constraintTop_toBottomOf="@+id/day14" />
+
+                <TextView
+                    android:id="@+id/day21"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@mipmap/ic_circleday"
+                    android:gravity="center"
+                    android:text="21"
+                    app:layout_constraintBottom_toTopOf="@+id/day27"
+                    app:layout_constraintEnd_toStartOf="@+id/day22"
+                    app:layout_constraintStart_toEndOf="@+id/day20"
+                    app:layout_constraintTop_toBottomOf="@+id/day15" />
+
+                <TextView
+                    android:id="@+id/day22"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@mipmap/ic_circleday"
+                    android:gravity="center"
+                    android:text="22"
+                    app:layout_constraintBottom_toTopOf="@+id/day28"
+                    app:layout_constraintEnd_toStartOf="@+id/day23"
+                    app:layout_constraintStart_toEndOf="@+id/day21"
+                    app:layout_constraintTop_toBottomOf="@+id/day16" />
+
+                <TextView
+                    android:id="@+id/day23"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@mipmap/ic_circleday"
+                    android:gravity="center"
+                    android:text="23"
+                    app:layout_constraintBottom_toTopOf="@+id/day29"
+                    app:layout_constraintEnd_toStartOf="@+id/day24"
+                    app:layout_constraintStart_toEndOf="@+id/day22"
+                    app:layout_constraintTop_toBottomOf="@+id/day17" />
+
+                <TextView
+                    android:id="@+id/day24"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@mipmap/ic_circleday"
+                    android:gravity="center"
+                    android:text="24"
+                    app:layout_constraintBottom_toTopOf="@+id/day30"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/day23"
+                    app:layout_constraintTop_toBottomOf="@+id/day18" />
+
+                <TextView
+                    android:id="@+id/day25"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@mipmap/ic_circleday"
+                    android:gravity="center"
+                    android:text="25"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/day26"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/day19"
+                    app:layout_constraintVertical_bias="0.023" />
+
+                <TextView
+                    android:id="@+id/day26"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@mipmap/ic_circleday"
+                    android:gravity="center"
+                    android:text="26"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/day27"
+                    app:layout_constraintStart_toEndOf="@+id/day25"
+                    app:layout_constraintTop_toBottomOf="@+id/day20" />
+
+                <TextView
+                    android:id="@+id/day27"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@mipmap/ic_circleday"
+                    android:gravity="center"
+                    android:text="27"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/day28"
+                    app:layout_constraintHorizontal_bias="0.261"
+                    app:layout_constraintStart_toEndOf="@+id/day26"
+                    app:layout_constraintTop_toBottomOf="@+id/day21" />
+
+                <TextView
+                    android:id="@+id/day28"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@mipmap/ic_circleday"
+                    android:gravity="center"
+                    android:text="28"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/day29"
+                    app:layout_constraintStart_toEndOf="@+id/day27"
+                    app:layout_constraintTop_toBottomOf="@+id/day22" />
+
+                <TextView
+                    android:id="@+id/day29"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@mipmap/ic_circleday"
+                    android:gravity="center"
+                    android:text="29"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/day30"
+                    app:layout_constraintStart_toEndOf="@+id/day28"
+                    app:layout_constraintTop_toBottomOf="@+id/day23" />
+
+                <TextView
+                    android:id="@+id/day30"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@mipmap/ic_circleday"
+                    android:gravity="center"
+                    android:text="30"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/day29"
+                    app:layout_constraintTop_toBottomOf="@+id/day24" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

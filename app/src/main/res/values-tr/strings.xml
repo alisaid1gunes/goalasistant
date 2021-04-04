@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Goal Assistant</string>
+    <string name="save">Kaydet</string>
+    <string name="goal">Hedef</string>
+    <string name="name">Ad</string>
+    <string name="error_message_name">İsim Alanı Boş Bırakılmaz !</string>
+    <string name="error_message_goal">Hedef Alanı Boş Bırakılamaz !</string>
+</resources>
